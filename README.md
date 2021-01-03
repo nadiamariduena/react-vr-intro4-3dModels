@@ -155,7 +155,7 @@ NOW render the death-star.obj like so:
 
 <br>
 
-  <div style="display: flex; justify-content: center;"><img style="width: 300px;" src="./img/smart-black-dude.gif"/></div>
+  <div style="display: flex; justify-content: center;"><img style="width: 150px;" src="./img/smart-black-dude.gif"/></div>
 
 <br>
 
@@ -176,3 +176,25 @@ NOW render the death-star.obj like so:
   />
 </View>
 ```
+
+<br>
+
+- In the code above, we are placing this object 2 meters back from the starting point.
+
+##### To better see the object, we can also make it a wireframe by adding the following property:
+
+```javascript
+<Model
+  source={{
+    obj: asset("death-star.obj"),
+  }}
+  style={{
+    transform: [{ translate: [0, 0, -2] }],
+  }}
+  wireframe={true} // <---- ADD THIS
+/>
+```
+
+##### it will add something like this:
+
+   <div style="display: flex; justify-content: center;"><img style="width: 400px;" src="./img/wireframe.jpg"/></div>

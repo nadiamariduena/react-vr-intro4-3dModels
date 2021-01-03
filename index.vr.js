@@ -12,6 +12,7 @@ export default class RecatVrIntro4_importing3dModels extends React.Component {
           style={{
             transform: [{ translate: [0, 0, -2] }],
           }}
+          wireframe={true}
         />
       </View>
     );
