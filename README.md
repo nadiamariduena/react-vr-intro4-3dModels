@@ -168,7 +168,7 @@ NOW render the death-star.obj like so:
 
   <div style="display: flex; justify-content: center;"><img src="./img/whitepage-after-deathstar.jpg"/></div>
 
-- A _GIANT_ white page, I refreshed many times thinking there was an issue , then i tried with another browser, then i thought "what if the moon was already there but just too big" so i zoomed out with the browser but it doesn't work with like that.
+- A _GIANT_ white page, I refreshed many times thinking there was an issue , then i tried with another browser, then i thought "what if the moon was already there but just too big" so i zoomed out with the browser but it doesn't work like that.
 
 <br>
 
@@ -188,7 +188,7 @@ NOW render the death-star.obj like so:
       obj: asset("death-star.obj"),
     }}
     style={{
-      transform: [{ translate: [0, 0, -2] }],
+      transform: [{ translate: [0, 0, -2] }], // add the -2 (2 meters back from the starting point)
     }}
   />
 </View>
@@ -197,8 +197,9 @@ NOW render the death-star.obj like so:
 <br>
 
 - In the code above, we are placing this object 2 meters back from the starting point.
+  <br>
 
-##### To better see the object, we can also make it a wireframe by adding the following property:
+#### To better see the object, we can also make it a wireframe by adding the following property:
 
 ```javascript
 <Model
@@ -218,7 +219,7 @@ NOW render the death-star.obj like so:
 
 <br>
 
-##### NOW CHANGE
+##### NOW CHANGE the following
 
 - CHANGE the recently added "wireframe" from TRUE to FALSE
 
@@ -518,3 +519,38 @@ render() {
 ##### REFRESH and it works, but as you can see, it will rotate until it reaches the 360 then it will stop
 
 <div style="display: flex; justify-content: center;"><img  src="./img/spinning-star.gif"/></div>
+
+<br>
+<br>
+<br>
+
+# 🏜️ LOOPING ANIMATION 🏜️
+
+##### SINCE THE MOON will rotate unitl it reaches the 360, we will need a loop to make the rotation infinite.
+
+- In order to loop our animation, let’s remove the animation from the lifecycle and place it in a separate function:
+
+```javascript
+componentDidMount() {
+    //
+    // 1
+    // we need to remove it from here
+
+}
+
+//
+//
+// 2
+// AND ADD IT HERE ( in a new function)
+//
+spinAnimation() {
+  Animated.timing(
+    this.state.spin,
+    {
+     toValue: 1,
+     duration: 3000,
+     easing: Easing.linear
+    }
+  ).start();
+}
+```
