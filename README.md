@@ -1,3 +1,55 @@
+# ReactVR _Importing 3D Models_
+
+## Installation
+
+- Click on the image to visit the repo (with the installation steps)
+
+[<img src="./img/default-chess.gif"/>](https://github.com/nadiamariduena/react-vr-intro1)
+
+<br>
+<br>
+<br>
+
+#### _AFTER YOU HAVE INSTALLED THE DEFAULT SETTINGS_ 🐖
+
+<br>
+
+- CHANGE/UPDATE the chess default image
+- Download this image and add it to the static_assets FOLDER
+
+- Name the image Space.jpg
+
+[Download this photo at the highest resolution](https://flic.kr/p/5C3Bcx)
+
+-Finally, let’s update the Pano component in index.vr.js like so:
+
+```javascript
+//
+<Pano source={asset("Space.jpg")} />
+// HERE in this area of the file
+//
+//
+//  ---------------- ° ------------------
+export default class RecatVrIntro4_importing3dModels extends React.Component {
+  render() {
+    return (
+      <View>
+        <Pano source={asset('chess-world.jpg')}/>
+        <Text
+          style={{
+```
+
+<br>
+
+- Also, go ahead and remove the Text component.
+
+
+<br>
+
+#### RESULT 👾
+
+[<img src="./img/changing-pano-image.gif"/>]()
+
 <!-- # React 360 _VR VIDEOS_
 
 ## Learning how to add Videos to 360 scene
