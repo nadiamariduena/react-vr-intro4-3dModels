@@ -2,13 +2,17 @@
 
 ## Installation 🏜
 
-- Click on the image to visit the repo (with the installation steps)
+- Click on the link to visit the repo (with the installation steps)
 
 [Default installation](https://github.com/nadiamariduena/react-vr-intro1)
 
+[<img src="./img/5ele.gif"/>](https://github.com/nadiamariduena/react-vr-intro1)
 
+<br>
+<br>
+<br>
 
-#### _AFTER YOU HAVE INSTALLED THE DEFAULT SETTINGS_  
+#### _AFTER YOU HAVE INSTALLED THE DEFAULT SETTINGS_
 
 <br>
 
@@ -41,29 +45,55 @@ export default class RecatVrIntro4_importing3dModels extends React.Component {
 
 - Also, go ahead and remove the Text component.
 
-
 <br>
 
 #### RESULT 👾
 
 [<img src="./img/changing-pano-image.gif"/>]()
 
-<!-- # React 360 _VR VIDEOS_
+<br>
+<br>
+<hr>
+<br>
+<br>
 
-## Learning how to add Videos to 360 scene
+## NOW GRAB THE 3D MODELS
 
-  <hr>
+- The best library for free 3D models that I have found is [Clara.io.](https://clara.io/library) , they have a wide variety of 3D models and formats for exporting the 3D models.
+
+##### Search "Death Star"! 👾
+
+<br>
+
+[<img src="./img/3dmodels-library.gif"/>]()
+
+<br>
+<br>
+
+#### 👾 Click on Download and select Wavefront OBJ (.obj)
+
+- Currently, this is the file format that React VR supports.
+
+<br>
+<br>
+
+[<img src="./img/death-star-example.png"/>]()
+
+<br>
+<br>
+
+##### OH YEAH (you have to create an account) to download the stuff... is okay :)
+
+[<img src="./img/loginhell.gif"/>]()
+
+<br>
+<br>
+
+### Go ahead and download the Death star ZIP 🐖
+
+- Extract this zip folder into the static_assets folder.
+  We can now see two new files:
+
   <br>
 
- ## WARNING!!
-
-#### ⚠️ Video issues related to adblocker 🕵️
-
-- SOMETIMES the video takes more than 10 secs to load, its due to how long the bundle takes to build
-
-- After completing the tutorial, I spent more than an hour trying to figure out "why?" the video didn't show,
-  at the end I decided to test it in another browser and bingo, I realized that it was related to my adblocker
-
-[<img src="./img/browsers-issues.gif"/>]()
-
-- MOZILLA seems to work perfectly (without adblocker of course) -->
+  <div style="display: flex; justify-content: center;"><img src="./img/data-deathstar.png"/></div>
