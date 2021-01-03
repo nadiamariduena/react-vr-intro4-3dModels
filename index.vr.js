@@ -8,11 +8,15 @@ export default class RecatVrIntro4_importing3dModels extends React.Component {
         <Model
           source={{
             obj: asset("death-star.obj"),
+            //mtl: asset('death-star.mtl')
           }}
           style={{
-            transform: [{ translate: [0, 0, -2] }],
+            transform: [{ translate: [0, 0, -2] }, { rotateY: "110deg" }],
           }}
-          wireframe={true}
+          texture={
+            "https://s3-us-west-2.amazonaws.com/s.cdpn.io/827672/death-star.png"
+          }
+          wireframe={false}
         />
       </View>
     );
