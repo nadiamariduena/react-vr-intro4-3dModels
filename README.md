@@ -1,6 +1,16 @@
 # ReactVR _Importing 3D Models_
 
-## Installation 🏜
+##### ORIGINAL ARTICLE
+
+- By Michael Mangialardi
+
+[Learn React VR (Chapter 5 | Star Wars Modeling)](https://medium.com/coding-artist/learn-react-vr-chapter-5-star-wars-modeling-74ebddbf96b8)
+
+<br>
+<hr>
+<br>
+
+## 🏜 Installation 🏜
 
 - Click on the link to visit the repo (with the installation steps)
 
@@ -598,3 +608,41 @@ spinAnimation() {
 }
 
 ```
+
+<div style="display: flex; justify-content: center;"><img  src="./img/done.gif"/></div>
+
+#### DONE!!! 👾 👾 👾
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+## 15 Best Tools for 3D Modeling Software
+
+[15 Best Tools for 3D Modeling Software](https://njoanna.medium.com/15-best-tools-for-3d-modeling-software-a7939fded451)
+
+- Tinkercad [Tinkercad](https://www.tinkercad.com/login?next=%2Fthings%2FevEVqx47oQU-learning-the-moves%2Feditv2%3Fcollectionid%3DO2C1PXBIQ2KHCOD%26lessonid%3DEABLWFTIQ2KHDSZ%26magic%3D8f3d0f31d8990ea45ee2b73ed86892e7209ee7ca%26projectid%3DO2C1PXBIQ2KHCOD%26t%3D1498334031067564578#/sxs-viewer) removes a ton of features and complexities of 3D modeling and allows you to get a taste of working with 3D shapes on a plane.
+  After you play around, you can export models in the .obj file format for use in React VR.
+
+<br>
+
+- Tinkercad is a good place to start because it requires no installations and has a really simple interface.
+
+- Tinkercad removes a ton of features and complexities of 3D modeling and allows you to get a taste of working with 3D shapes on a plane.
+  After you play around, you can export models in the .obj file format for use in React VR.
+
+  <br>
+
+<div style="display: flex; justify-content: center;"><img  src="./img/thinkercad-exa.png"/></div>
+
+<br>
+
+#### BLENDER FOR BEGINNERS
+
+[Here’s a beginner course suggested from the Blender site.](https://cgcookie.com/course/learn-the-blender-basics)
+
+- In Blender, you will be able to export 3D models in the .obj format for use in React VR.
+
+<div style="display: flex; justify-content: center;"><img  src="./img/blender.exa.png"/></div>
