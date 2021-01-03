@@ -1,6 +1,26 @@
 import React from "react";
-import { AppRegistry, asset, Pano, Text, View, Model } from "react-vr";
+import {
+  AppRegistry,
+  asset,
+  Pano,
+  Text,
+  View,
+  Model,
+  Animated,
+} from "react-vr";
+//
+//
+//
+import { Easing } from "react-native";
+//
 export default class RecatVrIntro4_importing3dModels extends React.Component {
+  constructor() {
+    super();
+    this.state = { spin: new Animated.Value(0) };
+  }
+  //
+  //
+  //
   render() {
     return (
       <View>
@@ -11,7 +31,7 @@ export default class RecatVrIntro4_importing3dModels extends React.Component {
             //mtl: asset('death-star.mtl')
           }}
           style={{
-            transform: [{ translate: [0, 0, -2] }, { rotateY: "110deg" }],
+            transform: [{ translate: [0, 0, -8] }, { rotate: this.state.spin }],
           }}
           texture={
             "https://s3-us-west-2.amazonaws.com/s.cdpn.io/827672/death-star.png"

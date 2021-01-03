@@ -282,3 +282,71 @@ style={{
 <br>
 
 ### 🏜️ ANIMATION 🏜️
+
+<br>
+<br>
+
+##### In order to do this, we have to import Animated (let’s also import Easing):
+
+```javascript
+import {
+  AppRegistry,
+  asset,
+  Pano,
+  Text,
+  View,
+  Model,
+  Animated,
+} from "react-vr";
+
+//
+import { Easing } from "react-native";
+```
+
+<br>
+
+##### Add a local state that will have an "Animated.Value" called "rotation":
+
+```javascript
+export default class StarWarsModeling extends React.Component {
+  constructor() {
+    super();
+    // Animated.Value
+    this.state = { spin: new Animated.Value(0) };
+  }
+  //more stuff
+}
+```
+
+##### Bind some inline styling for a rotateZ transformation to this:
+
+```javascript
+// this goes inside the data with the images
+style={{
+  transform: [
+    {translate: [0, 0, -8]},
+    {rotate: this.state.spin})
+  ]
+}}
+```
+
+##### Like so:
+
+```javascript
+<View>
+  <Pano source={asset("Space.jpg")} />
+  <Model
+    source={{
+      obj: asset("death-star.obj"),
+      //mtl: asset('death-star.mtl')
+    }}
+    style={{
+      transform: [{ translate: [0, 0, -8] }, { rotate: this.state.spin }],
+    }}
+    texture={
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/827672/death-star.png"
+    }
+    wireframe={false}
+  />
+</View>
+```
