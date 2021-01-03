@@ -577,3 +577,24 @@ componentDidMount() {
     }).start(() => this.spinAnimation());
 
 ```
+
+#### The final piece of the puzzle is have the Animated.Value of spin be reset at the start of the animation:
+
+```javascript
+spinAnimation() {
+    //
+    // here
+  this.state.spin.setValue(0);
+   //
+   //
+  Animated.timing(
+    this.state.spin,
+    {
+     toValue: 1,
+     duration: 3000,
+     easing: Easing.linear
+    }
+  ).start( () => this.spinAnimation() );
+}
+
+```

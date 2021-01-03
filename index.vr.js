@@ -26,6 +26,9 @@ export default class RecatVrIntro4_importing3dModels extends React.Component {
   //
   //
   spinAnimation() {
+    // Will make the Animated.Value of spin be reset at the start of the animation, check line 19
+    this.state.spin.setValue(0);
+    //
     Animated.timing(this.state.spin, {
       toValue: 1,
       duration: 3000,
