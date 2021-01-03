@@ -55,7 +55,8 @@ export default class RecatVrIntro4_importing3dModels extends React.Component {
             //mtl: asset('death-star.mtl')
           }}
           style={{
-            transform: [{ translate: [0, 0, -4] }, { rotate: spin }],
+            transform: [{ translate: [0, 0, -4] }, { rotateY: spin }],
+            // transform: [{ translate: [0, 0, -4] }, { rotate: spin }],
           }}
           //
           texture={
