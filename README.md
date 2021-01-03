@@ -1,16 +1,14 @@
 # ReactVR _Importing 3D Models_
 
-## Installation
+## Installation 🏜
 
 - Click on the image to visit the repo (with the installation steps)
 
-[<img src="./img/default-chess.gif"/>](https://github.com/nadiamariduena/react-vr-intro1)
+[Default installation](https://github.com/nadiamariduena/react-vr-intro1)
 
-<br>
-<br>
-<br>
 
-#### _AFTER YOU HAVE INSTALLED THE DEFAULT SETTINGS_ 🐖
+
+#### _AFTER YOU HAVE INSTALLED THE DEFAULT SETTINGS_  
 
 <br>
 
