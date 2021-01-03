@@ -30,7 +30,7 @@ export default class RecatVrIntro4_importing3dModels extends React.Component {
       toValue: 1,
       duration: 3000,
       easing: Easing.linear,
-    }).start();
+    }).start(() => this.spinAnimation());
   }
   //
   render() {

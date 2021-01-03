@@ -561,6 +561,19 @@ spinAnimation() {
 componentDidMount() {
   this.spinAnimation();
 }
+```
 
+<br>
+
+#### Next, we will have a call back in the start function of our spin animation that will cal the animation again:
+
+```javascript
+  spinAnimation() {
+    Animated.timing(this.state.spin, {
+      toValue: 1,
+      duration: 3000,
+      easing: Easing.linear,
+    //   --------- here below add this: () => this.spinAnimation()
+    }).start(() => this.spinAnimation());
 
 ```
