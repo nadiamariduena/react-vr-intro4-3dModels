@@ -70,7 +70,9 @@ export default class RecatVrIntro4_importing3dModels extends React.Component {
 
 <br>
 
-[<img src="./img/3dmodels-library.gif"/>]()
+   <div style="display: flex; justify-content: center;"><img style="width: 300px;" src="./img/3dmodels-library.gif"/></div>
+<!--    
+[<img src="./img/3dmodels-library.gif"/>]() -->
 
 <br>
 <br>
@@ -81,15 +83,18 @@ export default class RecatVrIntro4_importing3dModels extends React.Component {
 
 <br>
 <br>
+   <div style="display: flex; justify-content: center;"><img style="width: 300px;" src="./img/death-star-example.png"/></div>
 
-[<img src="./img/death-star-example.png"/>]()
+<!-- [<img src="./img/death-star-example.png"/>]() -->
 
 <br>
 <br>
 
 ##### OH YEAH (you have to create an account) to download the stuff... is okay :)
 
-[<img src="./img/loginhell.gif"/>]()
+   <div style="display: flex; justify-content: center;"><img style="width: 300px;" src="./img/loginhell.gif"/></div>
+
+<!-- [<img src="./img/loginhell.gif"/>]() -->
 
 <br>
 <br>
@@ -197,4 +202,4 @@ NOW render the death-star.obj like so:
 
 ##### it will add something like this:
 
-   <div style="display: flex; justify-content: center;"><img style="width: 400px;" src="./img/wireframe.jpg"/></div>
+   <div style="display: flex; justify-content: center;"><img style="width: 300px;" src="./img/wireframe.jpg"/></div>
