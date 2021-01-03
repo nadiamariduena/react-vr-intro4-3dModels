@@ -554,3 +554,13 @@ spinAnimation() {
   ).start();
 }
 ```
+
+#### THEN WE WANT TO CALL the freshly created function , inside the componentDidMount()
+
+```javascript
+componentDidMount() {
+  this.spinAnimation();
+}
+
+
+```
